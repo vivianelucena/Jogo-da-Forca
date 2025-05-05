@@ -1,6 +1,6 @@
 palavra = 'paralelepipedo'
 letraCerta = ['_'] * len(palavra)
-chances = 5
+chances = 6
 
 print("Jogo da Forca")
 print("Palavra:", " ".join(letraCerta))
@@ -27,6 +27,7 @@ while True:
 
     if chances == 0:
         print(f'Você perdeu!')
+        print("Palavra:", " ".join(letraCerta))
         break
 
     if '_' not in letraCerta:
